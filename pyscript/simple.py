@@ -1,4 +1,5 @@
 #new
-x="This is simple {} script"
-print(x.format("python"))
+print("This is simple {} script".format("python"))
+
+print(2+4)
 
