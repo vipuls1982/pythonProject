@@ -1,14 +1,14 @@
 from random import randint
-import time
-import os
+from time import sleep
+from os import system
 
-os.system('cls')
+system('cls')
 count=int(input("how many addition you want to practice:"))
 
 
 for i in range(1, count+1):
 
-    os.system('cls')
+    system('cls')
     a=randint(10,99)
     b=randint(10,99)
     tot=a+b
@@ -28,20 +28,20 @@ for i in range(1, count+1):
     if str(c) != str(once):
         print("Sorry, once digit is not correct rignt ans is " + str(once))
         c=input() 
-        time.sleep(10)
+        sleep(10)
         exit
     else :
         print(" ")
 
         
-    os.system('cls')
+    system('cls')
     print("enter carry forward")
     print("                    " + str(a) )
     print("                  + " + str(b) )
     print("                ------------")
     print("                     " + str(c) )
     d=input()
-    os.system('cls')
+    system('cls')
 
     if str(d) != str(cf):
         print("Sorry, carryforward is not correct rignt ans is " + str(cf)+ "\n please enter carryforward again") 
@@ -57,7 +57,7 @@ for i in range(1, count+1):
     print("                ------------")
     print("input tens digit     " + str(c) )
     e=input()
-    os.system('cls')
+    system('cls')
 
     if str(e) != str(tens) :
         print("Sorry, tens is not correct rignt ans is " + str(tens)+ "\n please enter carryforward again") 
@@ -79,6 +79,6 @@ for i in range(1, count+1):
         exit
     else :
         print("\n\n\n Hurray!!!!!!!!!! its correct")
-    time.sleep(5)
-    os.system('cls')
+    sleep(5)
+    system('cls')
     i=i+1
