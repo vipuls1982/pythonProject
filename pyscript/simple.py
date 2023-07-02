@@ -14,4 +14,4 @@ count = 0
 # Strips the newline character
 for line in Lines:
  count += 1
- print("Line{}: {}".format(count, line.strip()))
+ print("Lgitine{}: {}".format(count, line.strip()))
